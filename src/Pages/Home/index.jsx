@@ -5,7 +5,7 @@ import { Header } from "../../components/Header";
 import { Container } from "./styles";
 import { FiPlus } from "react-icons/fi";
 
-export function Home() {
+function Home() {
     return (
         <Container>
             <Header />
@@ -27,3 +27,5 @@ export function Home() {
         </Container>
     )
 }
+
+export default Home;

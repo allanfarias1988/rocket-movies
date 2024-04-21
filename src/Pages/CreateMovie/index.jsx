@@ -7,15 +7,15 @@ import { Tag } from "../../components/Tag";
 import { Button } from "../../components/Button"
 import { Link } from "react-router-dom";
 
-export function CreateMovie() {
+function CreateMovie() {
     return (
         <>
             <Container>
                 <Header />
                 <main>
-                    <Link to="/">
+                    <Link to="/home">
                         <FiArrowLeft />
-                        <a href="#">Voltar</a>
+                        Voltar
                     </Link>
 
                     <h1>Novo Filme</h1>
@@ -45,3 +45,5 @@ export function CreateMovie() {
         </>
     )
 }
+
+export default CreateMovie;

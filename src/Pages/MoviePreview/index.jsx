@@ -5,15 +5,15 @@ import { GoStar, GoStarFill } from "react-icons/go";
 import { Tag } from "../../components/Tag"
 import { Link } from "react-router-dom";
 
-export function MoviePreview() {
+function MoviePreview() {
     return (
         <>
             <Container>
                 <Header />
                 <main>
                     <FiArrowLeft />
-                    <Link to="/">
-                        <a href="#">Voltar</a>
+                    <Link to="/home">
+                        Voltar
                     </Link>
                     <div className="header">
                         <h2>Interestellar</h2>
@@ -84,3 +84,5 @@ export function MoviePreview() {
         </>
     )
 }
+
+export default MoviePreview;

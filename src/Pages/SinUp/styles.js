@@ -58,7 +58,7 @@ export const Form = styled.form`
   flex-direction: column;
   gap: 8px;
 
-  > a button {
+  > button {
     width: 100%;
     height: 56px;
     margin: 24px 0 42px;
