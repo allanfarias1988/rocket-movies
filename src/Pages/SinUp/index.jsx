@@ -14,9 +14,6 @@ function SinUp() {
     const navegate = useNavigate();
 
     async function handleSignUp() {
-        if (!name || !email || !password) {
-            return alert("Preencha todas as informações!")
-        }
 
         try {
             await api.post("/users", { name, email, password })
@@ -30,6 +27,8 @@ function SinUp() {
             }
         }
     }
+
+
     return (
         <Container>
             <div className="formWrapper">
@@ -39,18 +38,21 @@ function SinUp() {
                     <h3>Crie sua conta</h3>
                 </div>
                 <Form id="login">
+
                     <Input
                         icon={FiUser}
                         placeholder="Nome"
                         type="text"
                         onChange={event => setName(event.target.value)}
                     />
+
                     <Input
                         icon={FiMail}
                         placeholder="E-mail"
                         type="email"
                         onChange={event => setEmail(event.target.value)}
                     />
+
                     <Input
                         icon={FiLock}
                         placeholder="Senha"

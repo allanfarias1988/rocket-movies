@@ -8,6 +8,7 @@ function AuthRoutes() {
         <Routes>
             <Route path="/" element={<SinIn />} />
             <Route path="/register" element={<SinUp />} />
+            <Route path="*" element={<SinIn />} />
         </Routes>
     )
 }

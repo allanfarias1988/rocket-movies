@@ -1,11 +1,11 @@
-import { Container } from "./styles";
-import { Header } from "../../components/Header"
 import { FiArrowLeft, FiPlus } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-router-dom";
+import { Button } from "../../components/Button"
+import { Header } from "../../components/Header"
 import { Input } from "../../components/Input";
 import { Tag } from "../../components/Tag";
-import { Button } from "../../components/Button"
-import { Link } from "react-router-dom";
+import { Container } from "./styles";
 
 function CreateMovie() {
     return (
@@ -25,7 +25,7 @@ function CreateMovie() {
                         <Input type="text" placeholder="Sua nota(de 0 a 5)" />
                     </div>
 
-                    <textarea placeholder="Observações"></textarea>
+                    <textarea placeholder="Observações" />
 
                     <h3>Marcadores</h3>
                     <div className="tags">

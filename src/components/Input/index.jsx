@@ -1,5 +1,4 @@
 import { Container } from "./styles";
-import PropTypes from 'prop-types';
 
 export function Input({ icon: Icon, ...rest }) {
     return (
@@ -10,8 +9,4 @@ export function Input({ icon: Icon, ...rest }) {
     );
 }
 
-Input.propTypes = {
-    icon: PropTypes.elementType, // Valida que `icon` seja um componente React
-    rest: PropTypes.object, // Valida que `rest` seja um objeto
-};
 

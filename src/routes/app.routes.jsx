@@ -9,13 +9,15 @@ import SinIn from "../Pages/SinIn/index.jsx";
 
 
 function AppRoutes() {
+
     return (
         <Routes>
-            <Route path="/" element={<SinIn />} />
+            <Route path="/" element={<Home />} />
             <Route path="/new" element={<CreateMovie />} />
             <Route path="/home" element={<Home />} />
             <Route path="/preview" element={<MoviePreview />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="*" element={<SinIn />} />
         </Routes>
     )
 }

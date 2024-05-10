@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import image from "../../assets/allan-perfil.jpg";
 
 export const Header = styled.div`
   height: 144px;
@@ -45,7 +44,6 @@ export const ProfileImg = styled.div`
   margin: -80px 0 64px;
 
   border-radius: 50%;
-  background: url(${image}) no-repeat center center;
   background-size: cover;
 
   position: relative;

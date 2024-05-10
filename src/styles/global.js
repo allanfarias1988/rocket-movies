@@ -9,7 +9,7 @@ export default createGlobalStyle`
 }
 
 :root {
-  color-scheme: light dark;
+  color-scheme: dark light; // dark light - toggle system || dark || light
   color: hsl(${({ theme }) => theme.COLORS.NEUTRAL_200});
   background-color: hsl(${({ theme }) => theme.COLORS.BACKGROUND_GRAY_800});
 }
