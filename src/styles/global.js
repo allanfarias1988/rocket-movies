@@ -9,7 +9,7 @@ export default createGlobalStyle`
 }
 
 :root {
-  color-scheme: dark light; // dark light - toggle system || dark || light
+  color-scheme: dark; // dark light - toggle system || dark || light
   color: hsl(${({ theme }) => theme.COLORS.NEUTRAL_200});
   background-color: hsl(${({ theme }) => theme.COLORS.BACKGROUND_GRAY_800});
 }
@@ -40,6 +40,10 @@ main {
     margin: 0 106px 0 123px;
 }
 
+` // <<< remover  <<<< " ` " e descomentar o código abaixo para ativar o toggle light / dark mode 
+
+
+/* 
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -54,4 +58,6 @@ main {
   }
 }
 
-`;
+`
+
+ */
