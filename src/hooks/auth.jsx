@@ -77,7 +77,7 @@ export function AuthProvider({ children }) {
       return await api.get("/avatar", { responseType: 'blob' }
     );
     } catch (error) {
-      if (error.response) {
+      if (error.response.data.message) {
         alert(error.response.data.message);
       }
     }

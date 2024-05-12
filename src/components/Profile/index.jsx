@@ -31,7 +31,7 @@ export function Profile() {
 
     }, [avatar, getAvatar])
 
-    const avatarURL = user.avatar ? avatar: avatarDefault;
+    const avatarURL = user.avatar ? avatar : avatarDefault;
 
     return (
         <Container>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { FiArrowLeft, FiCamera, FiLock, FiMail, FiUser } from "react-icons/fi"
 import { Link } from "react-router-dom";
+import avatarDefault from "../../assets/avatar-default.svg";
 import { Button } from "../../components/Button"
 import { Input } from "../../components/Input"
 import { useAuth } from "../../hooks/auth";
@@ -71,7 +72,7 @@ function Profile() {
             </Header>
 
             <Container>
-                <ProfileImg style={{ backgroundImage: `url(${avatar})` }}>
+                <ProfileImg style={{ backgroundImage: `url(${avatar ?? avatarDefault})` }}>
                     <ProfileIcon>
                         <label htmlFor="fileInput">
                             <FiCamera />
